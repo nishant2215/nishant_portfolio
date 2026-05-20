@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -19,3 +20,6 @@ If you are developing a production application, we recommend using TypeScript wi
 # nishant-shrivastava-portfolio
 This is my Portfolio built with React.js highlighting my web development projects and skills.
 >>>>>>> aeff5ad044e3b89abcec4a96be6bf5d87b245e08
+=======
+# Showcasing my expertise in React Js, JavaScript, and modern UI development through real-world projects and craetive web solutions.
+>>>>>>> d284965aed7300df6d49c8787ba1d91653ab4541
