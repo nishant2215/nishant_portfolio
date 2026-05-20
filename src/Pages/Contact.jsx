@@ -29,7 +29,7 @@ export default function Contact() {
             <FaGithub /> GitHub
           </a>
 
-          <a href="https://www.linkedin.com/in/abhay-tomar-633a7624a/" target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
+          <a href="https://www.linkedin.com/in/nishant-shrivastava-633a7624a/" target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
             <FaLinkedin /> LinkedIn
           </a>
 

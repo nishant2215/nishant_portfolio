@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className={styles.socialLinksDiv}>
           <a
-            href="https://github.com/ShrivastavaNishant22"
+            href="https://github.com/nishant2215"
             target="_blank"
             rel="noopener noreferrer"
           >

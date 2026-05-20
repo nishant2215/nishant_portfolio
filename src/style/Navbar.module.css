@@ -1,4 +1,4 @@
-.header {
+/* .header {
     width: 95%;
     margin: 1.2rem auto;
     display: flex;
@@ -40,7 +40,7 @@
     transform: scale(1.1);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
- /* Ham Menu */
+
 .hamburger {
     display: none;
     font-size: 28px;
@@ -51,7 +51,7 @@
     margin-left: auto;
 }
 
-/* Mobile */
+
 
 @media (max-width: 768px) {
 
@@ -85,6 +85,115 @@
   }
   .hamburger {
      display: block;
+  }
+
+} */
+
+
+.header {
+    width: 95%;
+    margin: 1.2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.link {
+    font-size: 2.2rem;
+    color: #f99047;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navList {
+    display: flex;
+    gap: 2rem;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.navLink {
+    text-decoration: none;
+    display: inline-block;
+    color: #f99047;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ffff;
+    transform: scale(1.1);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Ham Menu */
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .header {
+     width: 100%;
+     padding: 12px 16px;
+  }
+
+  .logo {
+     width: 100%;
+  }
+
+  .link {
+     font-size: 1.7rem;
+     white-space: nowrap;
+  }
+
+  .navList {
+     position: absolute;
+     top: 70px;
+     left: 0;
+     width: 100%;
+     background: #0f172a;
+     flex-direction: column;
+     align-items: center;
+     gap: 1.5rem;
+     padding: 2rem 0;
+     opacity: 0;
+     transform: translateY(-15px);
+     pointer-events: none;
+     transition: all 0.3s ease;
+     border-top: 1px solid #334155;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+     z-index: 1000;
+  }
+
+  .active {
+     opacity: 1;
+     transform: translateY(0);
+     pointer-events: auto;
+  }
+
+  .hamburger {
+     display: block;
+     font-size: 22px;
+     margin-left: auto;
   }
 
 }
