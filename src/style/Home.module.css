@@ -1,0 +1,189 @@
+.ContentBody {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1e293b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.bodyContainer1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.one {
+  max-width: 33rem;
+  font-size: 2.0rem;
+  color: #f99047;
+}
+
+.two {
+  font-weight: 900;
+  color: #f8fafc;
+  font-size: 2rem;
+  max-width: 90%;
+  margin-top: -28px;
+}
+
+.three {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: #94a3b8;
+  margin-top: -16px;
+  
+}
+
+.four {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.downloadBtn,
+.F2 {
+  padding: 15px 24px;
+  background-color: #22c55e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.downloadBtn:hover,
+.F2:hover {
+  background-color: #3730a3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.downloadBtn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.bodyContainer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+  align-items: center;
+}
+
+/* .pic {
+  border-radius: 50%;
+  max-width: 60%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 1.3);
+} */
+
+ .pic {
+  width: 330px;        /* fixed equal width */
+  height: 350px;       /* fixed equal height */
+  border-radius: 50%;
+  object-fit: cover;   /* image crop proper hoga */
+  border: 2px solid #fff; /* optional white border */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.socialLinksDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.socialLinksDiv a i {
+  font-size: 24px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.socialLinksDiv a i:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+
+:global(.fa-github) {
+  color: black;
+}
+
+:global(.fa-linkedin) {
+  color: #0077b5;
+}
+
+:global(.fa-instagram) {
+  color: #e4405f;
+}
+
+:global(.fa-twitter) {
+  color: #1da1f2;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .ContentBody {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bodyContainer1,
+  .bodyContainer2 {
+    width: 100%;
+    align-items: center;
+  }
+
+  .two {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .three {
+    font-size: 1.3rem;
+  }
+
+  .four {
+    flex-direction: column;
+  }
+
+  .pic {
+    width: 20rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .ContentBody {
+    padding: 1rem;
+  }
+
+  .two {
+    font-size: 1.5rem;
+  }
+
+  .three {
+    font-size: 1.1rem;
+  }
+
+  .pic {
+    width: 15rem;
+  }
+
+  .downloadBtn,
+  .F2 {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .socialLinksDiv a i {
+    font-size: 20px;
+    margin: 5px;
+  }
+}

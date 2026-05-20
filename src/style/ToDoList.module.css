@@ -1,0 +1,108 @@
+.Container{
+    width: 40rem;
+    background-color: #374151;
+    margin:  1rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.todoText{
+    display: flex;
+    align-items: center;
+}
+.Container h1{
+    color: #f97316;
+}
+.inputSection{
+    display: flex;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius:30px;
+    padding-left: 1rem;
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    margin-bottom:1.5rem;
+}
+.inputSection input{
+    font-size: large;
+    flex: 1;
+    border: none;
+    outline: none;
+    background:transparent;
+    margin: 0;
+    font-weight: 200;
+}
+.inputSection input:focus{
+    box-shadow: none;
+}
+.inputSection button{
+    border: none;
+    outline: none;
+    background-color:#22c55e;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 2rem;
+    width: 6rem;
+    transition: transform 0.1s ease;
+}
+.inputSection button:hover {
+    transform: scale(1.01);
+    background-color: #169745;
+}
+
+.inputSection button:active {
+    transform: scale(0.95);
+    background-color: #169745;
+}
+.itemList{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    padding-left: 25px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+.itemList input{
+    margin-right: 1rem;
+}
+.itemList:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.itemList p{
+    flex:4;
+}
+.deleteIcon{
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    flex: 1;
+}
+
+.deleteIcon:hover {
+    transform: scale(1.2);
+}
+.clearBtn{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.7rem;
+    width: 10rem;
+    margin: 0 auto;
+    border: none;
+    background-color: rgb(248, 24, 24);
+    color: white;
+    border-radius: 1.4rem;
+    transition: all 0.3s ease;
+}
+.clearBtn:hover{
+    background-color: red;
+    transform: scale(1.05);
+}
